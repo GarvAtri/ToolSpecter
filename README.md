@@ -18,7 +18,6 @@
 ![Claude AI](https://img.shields.io/badge/Claude-Sonnet_4-D4A017?style=for-the-badge&labelColor=1a1a1a&color=D97706)
 ![Three.js](https://img.shields.io/badge/Three.js-3D_Models-00ff88?style=for-the-badge&labelColor=111111&color=00C853)
 ![Web Speech](https://img.shields.io/badge/Voice-Controlled-4488FF?style=for-the-badge&labelColor=111111&color=3B82F6)
-![Single File](https://img.shields.io/badge/MVP-Single_HTML_File-FF3333?style=for-the-badge&labelColor=111111&color=EF4444)
 
 <br/>
 
