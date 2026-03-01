@@ -72,7 +72,7 @@ Built as a hackathon MVP, it ships as a **single self-contained HTML file** with
 - Interactive **Three.js 3D models** rendered in real-time — no external assets needed
 - Procedurally built meshes for: **Excavator · Bulldozer · Dump Truck · Wheel Loader · Motor Grader**
 - Horizontal carousel with **infinite loop** navigation (arrows + dot indicators + keyboard)
-- Add custom vehicles with your own `.glb` model files
+- Added custom vehicles with your own `.glb` model files
 - Fleet registry list with last inspection status
 
 ```
