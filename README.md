@@ -298,21 +298,6 @@ Built for the **Caterpillar Track** at a 2025 hackathon. The vision: eliminate p
 
 ---
 
-## 🔮 Roadmap (Post-MVP)
-
-- [ ] Native React Native app (iOS + Android)
-- [ ] Real GLB model loading with GLTF loader
-- [ ] Cloud sync — inspection history across devices
-- [ ] Custom fine-tuned vision model on CAT equipment damage datasets
-- [ ] Integration with CAT's equipment management APIs
-- [ ] Offline-first PWA with local AI (on-device model)
-- [ ] Multi-inspector collaboration on same inspection
-- [ ] AR overlay mode for spatial annotation
-
-<br/>
-
----
-
 <div align="center">
 
 **Built with 🟡 and Claude AI**
