@@ -238,29 +238,6 @@ ToolSpecter calls the **Anthropic Claude API** for real vision analysis. To enab
 
 ---
 
-## 📁 Project Structure
-
-```
-toolspecter/
-└── toolspecter.html          # The entire application — 2,400 lines
-    ├── <style>               # All CSS — CAT industrial dark theme
-    ├── Three.js (CDN)        # 3D engine loaded from cdnjs
-    ├── Google Fonts (CDN)    # Bebas Neue, Rajdhani, Share Tech Mono
-    └── <script>
-        ├── State management  # Vanilla JS app state
-        ├── Three.js engine   # Procedural 3D vehicle meshes
-        ├── Screen router     # Splash → Dashboard → Inspect → Report
-        ├── Camera system     # WebRTC live camera
-        ├── AI analysis       # Claude Vision API + fallback
-        ├── Annotation layer  # Bounding box overlay renderer
-        ├── Voice control     # Wake-word + command parser
-        ├── TTS engine        # AI speech synthesis
-        ├── Checklist system  # Upload + AI extraction + state
-        └── Report generator  # Full color-coded report builder
-```
-
-<br/>
-
 ---
 
 ## 🔑 Key Capabilities
