@@ -307,7 +307,7 @@ Typography
 
 ---
 
-## 🏆 Hackathon Context
+## 
 
 Built for the **Caterpillar Track** at a 2025 hackathon. The vision: eliminate paper-based inspection checklists and give every field inspector a superpower — AI eyes that never miss a crack, a leak, or a worn sprocket tooth.
 
