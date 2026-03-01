@@ -306,7 +306,7 @@ Built for the **Caterpillar Track** at a 2025 hackathon. The vision: eliminate p
 
 <br/>
 
-![Made at Hackathon](https://img.shields.io/badge/Made_at-Hackathon_2025-FFCD11?style=flat-square&labelColor=000000)
+![Made at Hackathon](https://img.shields.io/badge/Made_at-Hackathon_2026-FFCD11?style=flat-square&labelColor=000000)
 ![Powered by Claude](https://img.shields.io/badge/Powered_by-Claude_AI-D97706?style=flat-square&labelColor=111111)
 ![CAT Track](https://img.shields.io/badge/Caterpillar-Track_Entry-FFCD11?style=flat-square&labelColor=000000)
 
