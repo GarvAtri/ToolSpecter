@@ -1,0 +1,10 @@
+export const CAT_YELLOW = '#FFCD11';
+export const BG         = '#080808';
+export const CARD       = '#101010';
+export const BORDER     = '#1E1E1E';
+export const GRAY       = '#666666';
+export const GREEN      = '#22C55E';
+export const ORANGE     = '#F59E0B';
+export const RED        = '#EF4444';
+export const FONT_BOLD  = 'BarlowCondensed_700Bold';
+export const FONT       = 'DMSans_400Regular';

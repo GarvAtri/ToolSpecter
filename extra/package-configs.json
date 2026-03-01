@@ -1,0 +1,130 @@
+// ═══════════════════════════════════════════════════════════
+//  cat-inspect-app/package.json  (React Native / Expo)
+// ═══════════════════════════════════════════════════════════
+{
+  "name": "cat-inspect-ai",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start":   "expo start",
+    "android": "expo run:android",
+    "ios":     "expo run:ios",
+    "web":     "expo start --web"
+  },
+  "dependencies": {
+    "expo":                            "~51.0.0",
+    "expo-status-bar":                 "~1.12.1",
+    "expo-camera":                     "~15.0.15",
+    "expo-av":                         "~14.0.7",
+    "expo-speech":                     "~12.0.2",
+    "expo-document-picker":            "~12.0.2",
+    "expo-image-picker":               "~15.0.7",
+    "expo-file-system":                "~17.0.1",
+    "expo-secure-store":               "~13.0.2",
+    "expo-web-browser":                "~13.0.3",
+    "expo-font":                       "~12.0.10",
+    "@expo-google-fonts/barlow-condensed": "^0.2.3",
+    "@expo-google-fonts/dm-sans":      "^0.2.3",
+    "@react-navigation/native":        "^6.1.17",
+    "@react-navigation/native-stack":  "^6.9.26",
+    "react-native-screens":            "3.31.1",
+    "react-native-safe-area-context":  "4.10.5",
+    "react-native-gesture-handler":    "~2.16.1",
+    "react-native-reanimated":         "~3.10.1",
+    "@react-three/fiber":              "^8.16.8",
+    "@react-three/drei":               "^9.105.4",
+    "three":                           "^0.164.1",
+    "socket.io-client":                "^4.7.5",
+    "@react-native-google-signin/google-signin": "^13.1.0",
+    "axios":                           "^1.7.2",
+    "react-native-svg":                "15.2.0",
+    "expo-router":                     "~3.5.14"
+  },
+  "devDependencies": {
+    "@babel/core":           "^7.24.0",
+    "typescript":            "^5.3.0",
+    "@types/react":          "~18.2.79",
+    "@types/react-native":   "~0.73.0",
+    "@types/three":          "^0.164.0"
+  }
+}
+
+
+// ═══════════════════════════════════════════════════════════
+//  cat-inspect-backend/package.json
+// ═══════════════════════════════════════════════════════════
+{
+  "name": "cat-inspect-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev":   "nodemon --experimental-vm-modules server.js",
+    "start": "node server.js",
+    "db:migrate": "npx prisma migrate dev",
+    "db:studio":  "npx prisma studio"
+  },
+  "dependencies": {
+    "express":          "^4.19.2",
+    "cors":             "^2.8.5",
+    "helmet":           "^7.1.0",
+    "morgan":           "^1.10.0",
+    "dotenv":           "^16.4.5",
+    "socket.io":        "^4.7.5",
+    "jsonwebtoken":     "^9.0.2",
+    "bcryptjs":         "^2.4.3",
+    "multer":           "^1.4.5-lts.1",
+    "openai":           "^4.52.2",
+    "@google/generative-ai": "^0.15.0",
+    "@anthropic-ai/sdk": "^0.26.0",
+    "google-auth-library": "^9.13.0",
+    "@google-cloud/storage": "^7.11.3",
+    "@prisma/client":   "^5.16.1",
+    "pdfkit":           "^0.15.0",
+    "zod":              "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon":    "^3.1.4",
+    "prisma":     "^5.16.1"
+  }
+}
+
+
+// ═══════════════════════════════════════════════════════════
+//  cat-inspect-app/app.config.js  (Expo config)
+// ═══════════════════════════════════════════════════════════
+module.exports = {
+  expo: {
+    name:   "CAT Inspect AI",
+    slug:   "cat-inspect-ai",
+    version:"1.0.0",
+    orientation: "portrait",
+    icon:   "./assets/icon.png",
+    scheme: "catinspect",
+    userInterfaceStyle: "dark",
+    splash: { image: "./assets/splash.png", resizeMode: "contain", backgroundColor: "#080808" },
+    ios: {
+      supportsTablet: true,
+      bundleIdentifier: "com.caterpillar.inspectai",
+      infoPlist: {
+        NSCameraUsageDescription: "Required for live equipment inspection",
+        NSMicrophoneUsageDescription: "Required for voice-controlled inspection",
+        NSPhotoLibraryUsageDescription: "Required to upload inspection media",
+      },
+    },
+    android: {
+      adaptiveIcon: { foregroundImage: "./assets/adaptive-icon.png", backgroundColor: "#080808" },
+      package: "com.caterpillar.inspectai",
+      permissions: ["CAMERA", "RECORD_AUDIO", "READ_EXTERNAL_STORAGE"],
+    },
+    plugins: [
+      "expo-router",
+      ["expo-camera",      { cameraPermission: "Allow CAT Inspect to use the camera" }],
+      ["expo-av",          { microphonePermission: "Allow CAT Inspect to use the microphone" }],
+      ["expo-document-picker"],
+      ["@react-native-google-signin/google-signin"],
+    ],
+    extra: {
+      eas: { projectId: "your-eas-project-id" }
+    },
+  },
+};

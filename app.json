@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "ToolSpecter",
+    "slug": "tool-specter",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "catinspect",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080808"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.caterpillar.inspectai",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Required for live equipment inspection",
+        "NSMicrophoneUsageDescription": "Required for voice-controlled inspection",
+        "NSPhotoLibraryUsageDescription": "Required to upload inspection media"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#080808"
+      },
+      "package": "com.caterpillar.inspectai",
+      "permissions": ["CAMERA", "RECORD_AUDIO", "READ_EXTERNAL_STORAGE"]
+    },
+    "plugins": [
+      "expo-router",
+      ["expo-camera", { "cameraPermission": "Allow CAT Inspect to use the camera" }],
+      ["expo-av", { "microphonePermission": "Allow CAT Inspect to use the microphone" }],
+      "expo-document-picker"
+    ]
+  }
+}
